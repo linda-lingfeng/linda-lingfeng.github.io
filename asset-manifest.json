@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dd26f0ac.css",
+    "main.js": "/static/js/main.cbc53234.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/otter_portrait.jpg": "/static/media/otter_portrait.3ae4f632450353e0497e.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.dd26f0ac.css.map": "/static/css/main.dd26f0ac.css.map",
+    "main.cbc53234.js.map": "/static/js/main.cbc53234.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd26f0ac.css",
+    "static/js/main.cbc53234.js"
+  ]
+}
