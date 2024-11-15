@@ -2,7 +2,9 @@
 function ContactInfoEntry(props) {
   return <p className="contact-info-entry">
     <span className="contact-info-entry-name"> {props.infoEntryName} </span>
-    <span className="contact-info-entry-value"> {props.infoEntryValue} </span>
+    {props.infoEntryValue.startsWith("https")
+      ? <a className="contact-info-entry-link" href={props.infoEntryValue}> {props.infoEntryValue} </a>
+      : <span className="contact-info-entry-value"> {props.infoEntryValue} </span> }
   </p>
 }
 

@@ -1,5 +1,5 @@
 import PortraitExhibit from "./PortraitExhibit";
-import otterPortrait from "./otter_portrait.jpg"
+import otterPortrait from "./profile_pic_2.png"
 
 function AboutMeComponent(props) {
   return <PortraitExhibit

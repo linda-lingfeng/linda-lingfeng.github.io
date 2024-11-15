@@ -1,17 +1,20 @@
 function NavigationBar(props) {
   return (<nav className="navbar">
-    <button className="nav-button"
-      onClick={() => props.setContentDisplayed("contact")}
-    >Contact</button>
-    <button className="nav-button"
-      onClick={() => props.setContentDisplayed("about me")}
-    >About</button>
-    <button className="nav-button"
-      onClick={() => props.setContentDisplayed("cv")}
-    >CV</button>
-    <button className="nav-button"
-      onClick={() => props.setContentDisplayed("current work")}
-    >Current Work</button>
+    <div className="navigation">
+      <button className="nav-button"
+        onClick={() => props.setContentDisplayed("contact")}
+      >Contact</button>
+      <button className="nav-button"
+        onClick={() => props.setContentDisplayed("about me")}
+      >About</button>
+      <button className="nav-button"
+        onClick={() => props.setContentDisplayed("cv")}
+      >Curriculum Vitae</button>
+      <button className="nav-button"
+        onClick={() => props.setContentDisplayed("current work")}
+      >Current Work</button>
+    </div>
+    <div className="navigation-border"></div>
   </nav>);
 }
 

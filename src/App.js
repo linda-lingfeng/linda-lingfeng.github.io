@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import NavigationBar from './NavigationBar';
 import WebsiteMainContent from './WebsiteMainContent';
