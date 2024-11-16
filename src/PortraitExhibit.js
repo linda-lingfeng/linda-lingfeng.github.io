@@ -8,17 +8,73 @@ function Portrait(props) {
 }
 
 
-function DescriptionBox(props) {
-  return <div className="description-box">
-    <h4 className="description-title"> {props.titleContent} </h4>
-    <div className="description-list">
-       {props.contentList.map((item) => {
-        return (<p className="description-list-item">{item}</p>)
-      })}
-    </div>
-  </div>;
+function DescriptionParagraphs(props) {
+  return <div className="description-list">
+    {props.contentList.map((descriptionItem) => {
+    if (descriptionItem.contentType === "text") {
+
+      /* Each child in this list is either a span with no styling or it is
+          an anchor which is a link with text for it they will all be put
+          into a block-level container which is returned. */
+      let children = descriptionItem.content.map((paragraphItem) => {
+          if (paragraphItem.textContentType === "raw") {
+            return <span>{paragraphItem.textContent}</span>
+          } else if (paragraphItem.textContentType === "link") {
+            return <a href={paragraphItem.linkURL}> {paragraphItem.textContent}</a>
+          }
+        });
+      return (<p className="description-list-item" children={children}/>);
+    
+    
+    /* Image Case: render the image from the source provided */
+    } else if (descriptionItem.contentType === "image") {
+      return (<img className="description-list-item description-list-item-image" src={descriptionItem.content}></img>)
+    }
+    
+    })}
+  </div>
 }
 
+
+
+function DescriptionList(props) {
+  return <ul className="description-list">
+    {props.contentList.map((descriptionItem) => {
+      if (descriptionItem.contentType === "text") {
+
+        /* Each child in this list is either a span with no styling or it is
+            an anchor which is a link with text for it they will all be put
+            into a block-level container which is returned. */
+        let children = descriptionItem.content.map((paragraphItem) => {
+            if (paragraphItem.textContentType === "raw") {
+              return <span>{paragraphItem.textContent}</span>
+            } else if (paragraphItem.textContentType === "link") {
+              return <a href={paragraphItem.linkURL}> {paragraphItem.textContent}</a>
+            }
+          });
+        return (<li className="description-list-item" children={children}/>);
+      }
+    })}
+  </ul>;
+}
+
+
+function DescriptionBox(props) {
+  let descriptionContent;
+  if (props.style === "paragraph") {
+    descriptionContent = <DescriptionParagraphs contentList={props.contentList} />
+  } else if (props.style === "list") {
+    descriptionContent = <DescriptionList contentList={props.contentList} />
+  } else {
+    descriptionContent = <div className="description-list"></div>
+  }
+
+
+  return <div className="description-box">
+    <h4 className="description-title"> {props.titleContent} </h4>
+    {descriptionContent}
+  </div>;
+}
 
 function PortraitExhibit(props) {
   return <div className="portrait-exhibit">
@@ -31,6 +87,7 @@ function PortraitExhibit(props) {
       <DescriptionBox
         titleContent={props.titleContent}
         contentList={props.contentList}
+        style={props.style}
       />
     </div>
   </div>
