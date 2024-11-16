@@ -24,7 +24,7 @@ function CVExhibit(props) {
     </div>
     <div className="cv-header-list">
       {props.cvSections.map((section, index) => {
-        return <button value={"/#cv-section-header" + index} onClick={() => window.location.replace("/#cv-section-header" + index)} className="cv-header-link-item"> {section.headerText}</button>
+        return <button value={"/#cv-section-header" + index} onClick={() => window.location.replace("/#cv-section-header" + index)} className="cv-header-list-item"> {section.headerText}</button>
       })}
     </div>
   </div>

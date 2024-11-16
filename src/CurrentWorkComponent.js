@@ -1,5 +1,5 @@
 import PortraitExhibit from "./PortraitExhibit";
-import otterPortrait from "./profile_pic_2.png"
+import otterPortrait from "./profile_pic_1.png"
 
 function CurrentWorkComponent(props) {
   return <PortraitExhibit

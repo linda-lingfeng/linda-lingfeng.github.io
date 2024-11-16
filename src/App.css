@@ -1,44 +1,30 @@
 .App {
+  /* Custom Lato font for general text */
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  
-  color: white;
-
-
   height: 100vh;
   width: 100vw;
- 
+
 
   background:
-  linear-gradient(180deg, rgba(10, 15, 80, 0.8),  rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0)),
+    linear-gradient(180deg, rgba(10, 15, 80, 0.8), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0)),
     linear-gradient(20deg, rgba(155, 23, 234, 0.3), rgba(9, 0, 84, 1), rgba(155, 23, 234, 0), rgba(9, 0, 84, 1), rgba(155, 23, 234, 0.9)),
     linear-gradient(60deg, rgba(155, 23, 234, 0.2), rgba(155, 23, 234, 0), rgba(155, 23, 234, 0)),
-    linear-gradient(70deg, rgba(40, 23, 234, 0.9), rgba(0,0,0,0), rgba(40, 23, 234, 0)),
-    linear-gradient(315deg, rgba(35, 191, 243, 0.7), rgba(0,0,0,0), rgba(40, 23, 234, 0))
-  ;
+    linear-gradient(70deg, rgba(40, 23, 234, 0.9), rgba(0, 0, 0, 0), rgba(40, 23, 234, 0)),
+    linear-gradient(315deg, rgba(35, 191, 243, 0.7), rgba(0, 0, 0, 0), rgba(40, 23, 234, 0));
 
   background-color: rgba(9, 0, 84, 1);
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/* ##### Navigation Bar ##### */
 .navbar {
   height: 5.0em;
   width: 100vw;
@@ -47,68 +33,79 @@
 
   align-items: center;
   flex-direction: column;
-  
-  background-color: rgba(0,0,0,0.4);
+
+  /* Slight tint darker than the background */
+  background-color: rgba(0, 0, 0, 0.4);
   /* background-color: rgba(113, 10, 64, 0.96); */
   /* background: linear-gradient(180deg, rgba(113, 10, 64, 0.96), rgba(113, 10, 64, 0.70),  rgba(113, 10, 64, 0)); */
 
   /* border-image: linear-gradient(90deg, rgba(35, 191, 243, 1), rgba(35, 191, 243, 0)) 1 100%; */
-  
+
 }
 
 .navigation-border {
-  order:2;
+  order: 2;
   height: 0.8em;
   width: 100vw;
 
   background: linear-gradient(90deg, rgba(35, 191, 243, 0.7), rgba(35, 191, 243, 0));
-  
 }
 
 
 .navigation {
-  order:1;
+  order: 1;
   height: 5.0em;
   width: 60vw;
 
   display: flex;
   justify-content: space-around;
-  
+
   flex-grow: 0;
   /* background-color: rgba(113, 10, 64, 0.96); */
-  
+
 }
 
 .nav-button {
+  /* Raleway thin font family */
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+
   height: 100%;
   width: fit-content;
   font-size: 1.5em;
   border: 0;
 
   color: white;
+  /* full transparent */
+  background-color: rgba(0, 0, 0, 0);
+}
 
-  background-color: rgba(113, 10, 64, 0);
-
+.nav-button:hover {
+  color: rgba(203, 162, 243, 1);
+  cursor: pointer;
+  /* background-color: rgba(196, 1, 208, 0.84); */
+  border-radius: 1em;
 }
 
 
+
+
+/* ##### Main Body Text ##### */
+/* All content not including the top most header */
 .body {
   /* background-color: violet; rgba(35, 191, 243, 0.96)*/
   /* background: linear-gradient(0.25turn, rgba(155, 23, 234, 0.96), rgba(155, 23, 234, 0), rgba(155, 23, 234, 0.96)); */
-  
-
-  
   display: flex;
   justify-content: center;
   align-items: center;
-
   flex-grow: 1;
   min-height: 0;
+  width: 100vw;
+
 }
 
-
-/* ##### Main Code ##### */
-/* All content not including the top most header */
 .main-content {
   display: flex;
   justify-content: center;
@@ -116,8 +113,7 @@
 
   height: 100%;
   min-height: 0;
-
-  
+  width: 100%
 }
 
 
@@ -146,13 +142,13 @@
 }
 
 .portrait-container {
-  order: 1; 
+  order: 1;
   min-height: 0;
   height: auto;
   width: 45%;
 
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -171,7 +167,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 
   /* background-color: rgba(10, 15, 80, 0.7); */
   background-color: rgba(0, 0, 0, 0.3);
@@ -179,7 +175,8 @@
   border-radius: 5em;
 }
 
-.description {
+/* ##### Description Box ##### */
+.description-box  {
   height: 100%;
   width: 100%;
   min-height: 0;
@@ -191,19 +188,20 @@
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 5em;
-
-  overflow-y: scroll;
 }
 
 .description-title {
   order: 1;
   flex-grow: 0;
-
-  
   margin-bottom: 1em;
 
-  
+  /* Raleway thin font family */
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 
+  font-size: 1.75em;
 }
 
 .description-list {
@@ -300,6 +298,18 @@
 .cv {
   width: 65%;
   overflow-y: scroll;
+
+
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 5em;
+
+
+  /* background-color: rgba(10, 15, 80, 0.7); */
+  background-color: rgba(0, 0, 0, 0.3);
+
+  border-radius: 5em;
 }
 
 .cv-header-list {
@@ -310,9 +320,34 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+
+  /* background-color: rgba(1, 8, 74, 1); */
 }
 
+.cv-header-list-item {
+  color: white;
+  padding: 0.75em;
+  /* margin-bottom: 0.5em; */
+
+  border-top: 0.1em solid;
+  border-bottom: 0.1em solid;
+
+  border-left: 0 solid;
+  border-right: 0 solid;
+
+  border-color: rgba(35, 191, 243, 1);
+
+  border-width: 0;
 
 
 
 
+  font-size: 1em;
+  /* background-color: rgba(113, 10, 64, 0); */
+
+  /* background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); */
+  /* background: linear-gradient(90deg, rgba(9, 0, 84, 0), rgba(9, 0, 84, 0.8), rgba(9, 0, 84, 1), rgba(9, 0, 84, 0.8), rgba(9, 0, 84, 0)); */
+  background: linear-gradient(90deg, rgba(1, 8, 74, 0), rgba(1, 8, 74, 0.8), rgba(1, 8, 74, 1), rgba(1, 8, 74, 0.8), rgba(1, 8, 74, 0));
+  /*rgba(9, 0, 84, 1)*/
+  /* rgba(1, 8, 74, 0.9) */
+}

@@ -9,10 +9,10 @@ function Portrait(props) {
 
 
 function DescriptionBox(props) {
-  return <div className="description">
+  return <div className="description-box">
     <h4 className="description-title"> {props.titleContent} </h4>
     <div className="description-list">
-      {props.contentList.map((item) => {
+       {props.contentList.map((item) => {
         return (<p className="description-list-item">{item}</p>)
       })}
     </div>
