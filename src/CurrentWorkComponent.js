@@ -11,11 +11,6 @@ function CurrentWorkComponent(props) {
         {textContentType: "raw", textContent: "Currently working on analyzing previously collected fMRI data with machine learning methods by attempting to classify scans taken from a generalized anxiety disorder (GAD) group and control group in different conditions of an approach-avoid conflict task. This project is being written using "},
         {textContentType: "link", textContent: "Braniak", linkURL: "https://brainiak.org/"},
         {textContentType: "raw", textContent: ", a Python package which implements various helper functions for brain imaging data to enable easier analysis with scikit-learn (https://scikit-learn.org/stable/). More information to be provided at a future date with permission from the principal investigator."},
-        
-
-
-        {textContentType: "raw", textContent: ""},
-        {textContentType: "link", textContent: "Braniak", linkURL: ""},
       ]},
 
       {contentType:"text",  content: [

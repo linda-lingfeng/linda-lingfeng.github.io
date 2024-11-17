@@ -205,7 +205,7 @@ a:visited {
   /* background-color: rgba(10, 15, 80, 0.7); */
   background-color: rgba(0, 0, 0, 0.3);
 
-  border-radius: 5em;
+  border-radius: 3em;
 }
 
 /* ##### Description Box ##### */
@@ -226,7 +226,8 @@ a:visited {
 .description-title {
   order: 1;
   flex-grow: 0;
-  margin-bottom: 1em;
+  
+  margin: 0.2em 0 0.2em 0;
 
   /* Raleway thin font family */
   font-family: "Raleway", sans-serif;
@@ -246,15 +247,6 @@ a:visited {
   text-align: left;
   overflow-x: hidden;
   overflow-y: scroll;
-}
-
-.description-list-item {
-  /* Hide the content to let it slide */
-  animation: slide 1s forwards;
-  position: relative;
-  left: 100%;
-  padding: 0.25em;
-  margin: 0;
 }
 
 .description-list-item {

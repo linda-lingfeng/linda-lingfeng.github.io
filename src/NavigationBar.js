@@ -3,7 +3,7 @@ function NavigationBar(props) {
     <div className="navigation">
       <button className="nav-button"
         onClick={() => props.setContentDisplayed("about me")}
-      >About</button>
+      >About Me</button>
       <button className="nav-button"
         onClick={() => props.setContentDisplayed("cv")}
       >Curriculum Vitae</button>
