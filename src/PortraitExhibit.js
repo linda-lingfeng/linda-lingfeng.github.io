@@ -11,6 +11,8 @@ function Portrait(props) {
 function DescriptionParagraphs(props) {
   return <div className="description-list">
     {props.contentList.map((descriptionItem) => {
+
+    let className = descriptionItem.className ? "description-list-item " + descriptionItem.className : "description-list-item";
     if (descriptionItem.contentType === "text") {
 
       /* Each child in this list is either a span with no styling or it is
@@ -23,12 +25,14 @@ function DescriptionParagraphs(props) {
             return <a href={paragraphItem.linkURL}> {paragraphItem.textContent}</a>
           }
         });
-      return (<p className="description-list-item" children={children}/>);
+      
+      
+      return (<p className={className} children={children}/>);
     
     
     /* Image Case: render the image from the source provided */
     } else if (descriptionItem.contentType === "image") {
-      return (<img className="description-list-item description-list-item-image" src={descriptionItem.content}></img>)
+      return (<img className={className} src={descriptionItem.content}></img>)
     }
     
     })}
@@ -64,6 +68,7 @@ function DescriptionBox(props) {
   if (props.style === "paragraph") {
     descriptionContent = <DescriptionParagraphs contentList={props.contentList} />
   } else if (props.style === "list") {
+    /* NOTE that description List does NOT support custom class names in the same way  */
     descriptionContent = <DescriptionList contentList={props.contentList} />
   } else {
     descriptionContent = <div className="description-list"></div>
@@ -76,6 +81,10 @@ function DescriptionBox(props) {
   </div>;
 }
 
+
+/**
+ * Designs an exhibit for a potrait on the left with text to the right
+ */
 function PortraitExhibit(props) {
   return <div className="portrait-exhibit">
     <div className="portrait-container">

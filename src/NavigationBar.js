@@ -9,7 +9,7 @@ function NavigationBar(props) {
       >Curriculum Vitae</button>
       <button className="nav-button"
         onClick={() => props.setContentDisplayed("current work")}
-      >Current Work</button>
+      >Recent Work</button>
       <button className="nav-button"
         onClick={() => props.setContentDisplayed("contact")}
       >Contact</button>

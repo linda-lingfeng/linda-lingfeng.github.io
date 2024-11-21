@@ -14,13 +14,13 @@
 
 
   background:
-    linear-gradient(180deg, rgba(10, 15, 80, 0.8), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0), rgba(10, 15, 80, 0)),
-    linear-gradient(20deg, rgba(155, 23, 234, 0.3), rgba(9, 0, 84, 1), rgba(155, 23, 234, 0), rgba(9, 0, 84, 1), rgba(155, 23, 234, 0.9)),
-    linear-gradient(60deg, rgba(155, 23, 234, 0.2), rgba(155, 23, 234, 0), rgba(155, 23, 234, 0)),
-    linear-gradient(70deg, rgba(40, 23, 234, 0.9), rgba(0, 0, 0, 0), rgba(40, 23, 234, 0)),
-    linear-gradient(315deg, rgba(35, 191, 243, 0.7), rgba(0, 0, 0, 0), rgba(40, 23, 234, 0));
+    linear-gradient(180deg, rgba(19, 23, 73, 0.8), rgba(19, 23, 73, 0), rgba(19, 23, 73, 0), rgba(19, 23, 73, 0), rgba(19, 23, 73, 0), rgba(19, 23, 73, 0), rgba(19, 23, 73, 0)),
+    linear-gradient(20deg, rgba(79, 26, 110, 0.3), rgba(16, 10, 71, 1), rgba(149, 48, 207, 0), rgba(16, 10, 71, 1), rgba(149, 48, 207, 0.9)),
+    linear-gradient(60deg, rgba(149, 48, 207, 0.2), rgba(149, 48, 207, 0), rgba(149, 48, 207, 0)),
+    linear-gradient(70deg, rgba(61, 48, 207, 0.9), rgba(0, 0, 0, 0), rgba(61, 48, 207, 0)),
+    linear-gradient(315deg, rgba(63, 179, 218, 0.7), rgba(0, 0, 0, 0), rgba(61, 48, 207, 0));
 
-  background-color: rgba(9, 0, 84, 1);
+  background-color: rgba(16, 10, 71, 1);
   color: white;
 }
 
@@ -170,7 +170,7 @@ a:visited {
   order: 1;
   min-height: 0;
   height: auto;
-  width: 45%;
+  width: 40%;
 
   display: flex;
   justify-content: center;
@@ -258,6 +258,16 @@ a:visited {
   margin: 0;
 }
 
+.description-list-item.quote-italics {
+  animation: slide 1s forwards;
+  position: relative;
+  left: 100%;
+  padding: 0.25em;
+  margin: 0;
+
+  font-style: italic;
+}
+
 .description-list-item.description-list-item-image {
   animation: slide 1s forwards;
   position: relative;
@@ -265,6 +275,18 @@ a:visited {
 
   object-fit: contain;
   width:100%;
+}
+
+.description-list-item.about-me-description-header {
+  animation: slide 1s forwards;
+  position: relative;
+  left: 100%;
+  width:100%;
+
+  padding-top: 1em;
+  font-size: 1.5em;
+  font-style: italic;
+  /* font-weight: bold; */
 }
 
 .description-list-item:nth-child(1) {
