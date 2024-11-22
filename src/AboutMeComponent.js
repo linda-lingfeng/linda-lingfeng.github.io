@@ -37,7 +37,7 @@ function AboutMeComponent(props) {
       ]},
 
       {contentType:"text", className:"quote-italics",  content: [
-        {textContentType:"raw", textContent: "“A society grows great when old men grow trees in whose shade they shall never sit”"}
+        {textContentType:"raw", textContent: "“A society grows great when old men grow trees in whose shade they shall never sit.”"}
       ]},
 
       {contentType:"text",  content: [

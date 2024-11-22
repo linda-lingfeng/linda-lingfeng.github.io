@@ -10,7 +10,9 @@ function CurrentWorkComponent(props) {
       {contentType:"text",  content: [
         {textContentType: "raw", textContent: "Currently working on analyzing previously collected fMRI data with machine learning methods by attempting to classify scans taken from a generalized anxiety disorder (GAD) group and control group in different conditions of an approach-avoid conflict task. This project is being written using "},
         {textContentType: "link", textContent: "Brainiak", linkURL: "https://brainiak.org/"},
-        {textContentType: "raw", textContent: ", a Python package which implements various helper functions for brain imaging data to enable easier analysis with scikit-learn (https://scikit-learn.org/stable/). More information to be provided at a future date with permission from the principal investigator."},
+        {textContentType: "raw", textContent: ", a Python package which implements various helper functions for brain imaging data to enable easier analysis with "},
+        {textContentType: "link", textContent: "scikit-learn", linkURL: "https://scikit-learn.org/stable/"},
+        {textContentType: "raw", textContent: ". More information to be provided at a future date with permission from the principal investigator."},
       ]},
 
       {contentType:"text",  content: [
@@ -20,7 +22,7 @@ function CurrentWorkComponent(props) {
       ]},
 
       {contentType:"text",  content: [
-        {textContentType: "raw", textContent: "Published a literature mapping paper at the SIGCSE 2024 conference that investigates how alternative grading is studied in computer science education research. Over the summer of 2023, I worked with other students in the "},
+        {textContentType: "raw", textContent: "Published a literature mapping paper at the ACM SIGCSE 2024 conference that investigates how alternative grading is studied in computer science education research. Over the summer of 2023, I worked with other students in the "},
         {textContentType: "link", textContent: "CMS Undergraduate Research Group", linkURL: "http://brianharrington.net/"},
         {textContentType: "raw", textContent: " to read through and classify ~40 papers based on the type of grading implemented in the study, the target audience and the metric used to evaluate results. This project served to outline current patterns in computer science education research and highlight potential areas for future investigation. Thank you to Professor Brian Harrington for the advice and support provided throughout the project!"},
       ]},
