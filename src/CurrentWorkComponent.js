@@ -12,7 +12,7 @@ function CurrentWorkComponent(props) {
         {textContentType: "link", textContent: "Brainiak", linkURL: "https://brainiak.org/"},
         {textContentType: "raw", textContent: ", a Python package which implements various helper functions for brain imaging data to enable easier analysis with "},
         {textContentType: "link", textContent: "scikit-learn", linkURL: "https://scikit-learn.org/stable/"},
-        {textContentType: "raw", textContent: ". More information to be provided at a future date with permission from the principal investigator."},
+        {textContentType: "raw", textContent: "."},
       ]},
 
       {contentType:"text",  content: [
