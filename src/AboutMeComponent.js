@@ -1,5 +1,5 @@
 import PortraitExhibit from "./PortraitExhibit";
-import personalPortrait from "./profile_pic_1.png"
+import personalPortrait from "./profile_pic_1.jpg"
 import treeImage from "./a_person_sitting_under_tree_gray.png"
 
 function AboutMeComponent(props) {

@@ -1,5 +1,5 @@
 import PortraitExhibit from "./PortraitExhibit";
-import personalPortrait from "./profile_pic_1.png"
+import personalPortrait from "./profile_pic_1.jpg"
 
 function CurrentWorkComponent(props) {
   return <PortraitExhibit
@@ -8,9 +8,11 @@ function CurrentWorkComponent(props) {
     style="list"
     contentList={[
       {contentType:"text",  content: [
-        {textContentType: "raw", textContent: "Currently working on analyzing previously collected fMRI data with machine learning methods by attempting to classify scans taken from a generalized anxiety disorder (GAD) group and control group in different conditions of an approach-avoid conflict task. This project is being written using "},
+        {textContentType: "raw", textContent: "Currently working on analyzing previously collected fMRI data for "},
+        {textContentType: "link", textContent: "Dr. Andy Lee", linkURL:"https://www.leemtllab.com/"},
+        {textContentType: "raw", textContent: " by attempting to classify scans taken from a generalized anxiety disorder (GAD) group and control group under different conditions of an approach-avoid conflict task. This project is being written using "},
         {textContentType: "link", textContent: "Brainiak", linkURL: "https://brainiak.org/"},
-        {textContentType: "raw", textContent: ", a Python package which implements various helper functions for brain imaging data to enable easier analysis with "},
+        {textContentType: "raw", textContent: ", a Python package which implements various specialized functions for brain imaging data to enable easier analysis with "},
         {textContentType: "link", textContent: "scikit-learn", linkURL: "https://scikit-learn.org/stable/"},
         {textContentType: "raw", textContent: "."},
       ]},
